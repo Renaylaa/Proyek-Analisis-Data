@@ -99,8 +99,8 @@ sns.barplot(
 
 st.pyplot(fig)
 
-st.write(f"📌 Stasiun dengan PM2.5 tertinggi: **{station_df.iloc[0]['station']}**")
-st.write(f"📌 Stasiun dengan PM2.5 terendah: **{station_df.iloc[-1]['station']}**")
+st.write(f" Stasiun dengan PM2.5 tertinggi: **{station_df.iloc[0]['station']}**")
+st.write(f" Stasiun dengan PM2.5 terendah: **{station_df.iloc[-1]['station']}**")
 
 st.subheader("Tren Bulanan PM2.5")
 
@@ -120,8 +120,8 @@ st.pyplot(fig)
 worst = monthly_df.sort_values(by="PM2.5", ascending=False).iloc[0]
 best = monthly_df.sort_values(by="PM2.5", ascending=True).iloc[0]
 
-st.write(f"📌 Bulan terburuk: **{worst['Bulan']}** ({round(worst['PM2.5'],2)})")
-st.write(f"📌 Bulan terbaik: **{best['Bulan']}** ({round(best['PM2.5'],2)})")
+st.write(f" Bulan terburuk: **{worst['Bulan']}** ({round(worst['PM2.5'],2)})")
+st.write(f" Bulan terbaik: **{best['Bulan']}** ({round(best['PM2.5'],2)})")
 
 st.subheader("Daily PM2.5 Trend")
 
