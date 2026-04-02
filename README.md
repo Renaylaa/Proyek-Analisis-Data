@@ -1,21 +1,21 @@
 # Air Quality Dashboard
 
-## Setup Environment
-
-### Menggunakan Anaconda
+## Setup Environment - Anaconda
 ```bash
 conda create --name airquality-env python=3.9
 conda activate airquality-env
 pip install -r requirements.txt
+```
 
-### Menggunakan Shell/Terminal
+## Setup Environment - Shell/Terminal
 mkdir proyek_analisis_data
 cd proyek_analisis_data
 pipenv install
 pipenv shell
 pip install -r requirements.txt
 
-### Run Streamlit App
+## Run Streamlit App
 streamlit run dashboard_airquality.py
+
 
 
