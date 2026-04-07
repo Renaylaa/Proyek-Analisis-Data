@@ -119,9 +119,6 @@ col1.metric("Rata-rata PM2.5 Aotizhongxin", round(aot_avg,2))
 col2.metric("Rata-rata PM2.5 Changping", round(cha_avg,2))
 
 
-#edef
-
-
 def create_daily_pollution_df(df):
     daily_pollution_df = df.resample(rule='D', on='datetime').agg({
         "PM2.5": "mean"
